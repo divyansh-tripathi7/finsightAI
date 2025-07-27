@@ -98,12 +98,11 @@ Follow these steps to get finsightAI up and running locally:
 git clone https://github.com/divyansh-tripathi7/finsightAI.git
 cd finsightAI
 
-```bash
+```
 
 ### 2. Create and Activate a Virtual Environment
 ```bash
-Copy
-Edit
+
 python3 -m venv venv
 source venv/bin/activate  # for macOS/Linux
 
@@ -112,53 +111,42 @@ source venv/bin/activate  # for macOS/Linux
 # For Windows:
 # venv\Scripts\activate
 
-```bash
+```
 ### 3. Install Required Dependencies
 ```bash
-Copy
-Edit
+
 pip install -r requirements.txt
-If using local ADK tools and you have a requirements_adk.txt file:
-
-
-
-```bash
-Copy
-Edit
-pip install -r requirements_adk.txt
+```
 
 ### 4. Set Up Environment Variables
 Create a .env file in the root directory and fill it with the required keys (you can refer to .env.example if provided):
 
 ```bash
-Copy
-Edit
+
 cp .env.example .env
 Edit the .env file and add:
 
-ini
-Copy
-Edit
 GOOGLE_API_KEY=your_google_api_key
 PROJECT_ID=your_vertex_project_id
 MCP_API_KEY=your_mcp_key
 ADK_LOG_LEVEL=DEBUG
 (Optional) Add your Gemini model config if needed.
 
+```
+
 ### 5. Launch the Agent Using Google ADK
 Make sure you have the Google Agent Development Kit installed:
 
 ```bash
-Copy
-Edit
+
 pip install google-generativeai
 pip install --upgrade google-generativeai[adk]
 Run the local web interface:
 
-```bash
-Copy
-Edit
+
 adk web
+
+```
 The ADK interface will launch at http://localhost:8080
 
 
