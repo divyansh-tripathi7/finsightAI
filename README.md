@@ -98,6 +98,8 @@ Follow these steps to get finsightAI up and running locally:
 git clone https://github.com/divyansh-tripathi7/finsightAI.git
 cd finsightAI
 
+```bash
+
 ### 2. Create and Activate a Virtual Environment
 ```bash
 Copy
@@ -105,14 +107,20 @@ Edit
 python3 -m venv venv
 source venv/bin/activate  # for macOS/Linux
 
+
+
 # For Windows:
 # venv\Scripts\activate
+
+```bash
 ### 3. Install Required Dependencies
 ```bash
 Copy
 Edit
 pip install -r requirements.txt
 If using local ADK tools and you have a requirements_adk.txt file:
+
+
 
 ```bash
 Copy
